@@ -10,8 +10,6 @@ export const GET = async (req, { params }) => {
 
         const filterType = (await params).category;
 
-        console.log(filterType);
-
         let games
         if (filters[filterType]) {
 

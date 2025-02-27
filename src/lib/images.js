@@ -9,7 +9,7 @@ export const getImagesWithName = async (games) => {
     for (let game of games) {
         gamesData.push({
             name: game.gameName,
-            img: `/api/game_img/${game.image}`
+            img: `/api/game-img/${game.image}`
         });
     }
     return gamesData;

@@ -11,7 +11,7 @@ const SearchResults = ({ query, handleClick }) => {
             if (!query) return; // Avoid API call if query is empty
 
             try {
-                const res = await axios.get(`/api/search_game?q=${query}`);
+                const res = await axios.get(`/api/search-game?q=${query}`);
                 setGames(res.data.games);
             } catch (error) {
                 console.error("Error fetching games:", error);

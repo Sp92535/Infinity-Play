@@ -17,7 +17,7 @@ const Carousel = ({ category }) => {
         try {
             if (!category) throw new Error("No Category");
 
-            const res = await axios.get("/api/category_latest/" + category);
+            const res = await axios.get("/api/category-latest/" + category);
             setCurrGames(res.data.games);
         } catch (error) {
             console.error('Error fetching game data:', error);
@@ -43,7 +43,7 @@ const Carousel = ({ category }) => {
 
     const settings = {
         dots: false,
-        infinite: true,
+        infinite: false,
         speed: 400,
         slidesToShow: 7,
         slidesToScroll: 2

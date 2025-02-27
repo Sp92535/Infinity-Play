@@ -71,7 +71,7 @@ const Game = () => {
         const fetchGame = async () => {
             try {
                 
-                const response = await axios.get(`/api/game_data/${gameName}`, {
+                const response = await axios.get(`/api/game-data/${gameName}`, {
                     validateStatus: () => true, // Allows handling all response statuses
                 });
 
@@ -119,7 +119,7 @@ const Game = () => {
                 <h1 className="game-title">{capitalize(game.gameName)}</h1>
                 <object
                     id="gameObject"
-                    data={`/api/game_file/${game.gamePath}`}
+                    data={`/api/game-file/${game.gamePath}`}
                     type="application/x-shockwave-flash"
                     width="800"
                     height="500"

@@ -14,7 +14,7 @@ const CategoryAll = ({ category }) => {
             if (!category) return; // Avoid API call if query is empty
 
             try {
-                const res = await axios.get(`/api/category_all/${category}`);
+                const res = await axios.get(`/api/category-all/${category}`);
                 setGames(res.data.games);
             } catch (error) {
                 console.error("Error fetching games:", error);

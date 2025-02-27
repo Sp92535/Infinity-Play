@@ -18,7 +18,7 @@ const DeleteAdmin = () => {
         setSuccess(null);
 
         try {
-            const response = await axios.get(`/api/search_admin`, {
+            const response = await axios.get(`/api/search-admin`, {
                 params: { q: username },
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("access_token")}`,
@@ -51,7 +51,7 @@ const DeleteAdmin = () => {
         setSuccess(null);
 
         try {
-            const response = await axios.delete(`api/delete_admin`, {
+            const response = await axios.delete(`api/delete-admin`, {
                 data: { username: confirmDeleteUsername },
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("access_token")}`,

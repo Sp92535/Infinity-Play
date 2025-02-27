@@ -11,7 +11,7 @@ const DeleteGame = () => {
     const deleteGame = async () => {
         try {
             if (!confirmGame) return;
-            const res = await axios.delete(`/api/delete_game/${confirmGame}`, {
+            const res = await axios.delete(`/api/delete-game/${confirmGame}`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("access_token")}`,
                 },

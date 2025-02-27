@@ -7,7 +7,6 @@ export const POST = async (req) => {
         
         const body = await req.json();
 
-        console.log(body);
         // Decision pending of mail 
 
         return NextResponse.json({

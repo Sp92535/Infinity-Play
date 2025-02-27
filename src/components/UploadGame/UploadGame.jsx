@@ -20,8 +20,8 @@ const UploadGame = () => {
         setIsUploading(true);
 
         const formData = new FormData();
-        formData.append("gameName", gameName);
-        formData.append("gameDescription", gameDescription);
+        formData.append("gameName", gameName.trim());
+        formData.append("gameDescription", gameDescription.trim());
         gameCategory.forEach((cat) => formData.append("gameCategory", cat));
         gameKeywords.forEach((key) => formData.append("gameKeywords", key));
         formData.append("image", image);
@@ -33,7 +33,7 @@ const UploadGame = () => {
         }
 
         try {
-            await axios.post("/api/upload_game", formData, {
+            await axios.post("/api/upload-game", formData, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("access_token")}`,
                     "Content-Type": "multipart/form-data"
