@@ -1,0 +1,29 @@
+
+.game-card {
+    background-color: #292929;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 160px;
+    max-width: 160px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+.game-card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.game-card p {
+    margin-top: 10px;
+    font-size: 15px;
+    color: white;
+}

@@ -1,0 +1,66 @@
+.game-section {
+    margin: 40px 0;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    /* margin-top: 50px; */
+    /* margin-bottom: 160px; */
+}
+
+.game-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+
+.slick-slide>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.slick-prev,
+.slick-next {
+    z-index: 10;
+    width: 30px;
+    /* Adjust width */
+    height: 190px;
+    /* Make it vertical */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+
+.slick-prev::before,
+.slick-next::before {
+    font-size: 24px;
+    color: white;
+}
+
+
+.slick-prev:hover, .slick-next:hover{
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
+.slick-prev:focus, .slick-next:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+/* Fix gap issues in the carousel */

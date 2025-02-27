@@ -1,0 +1,16 @@
+.game-category-container {
+    padding: 20px;
+    text-align: center;
+
+    h2 {
+        color: white;
+    }
+
+    .game-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr) !important;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}

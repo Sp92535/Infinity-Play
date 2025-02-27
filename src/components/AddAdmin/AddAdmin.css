@@ -1,0 +1,116 @@
+/* Global container */
+.add-admin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Card styling */
+.add-admin-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Form styling */
+.add-admin-card h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.add-admin-card .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.add-admin-card label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #444;
+}
+
+.add-admin-card input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: 0.3s ease-in-out;
+}
+
+.add-admin-card input:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Password toggle */
+.toggle-password-wrapper {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.toggle-password {
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.2s ease;
+}
+
+.toggle-password:hover {
+    opacity: 0.7;
+}
+
+/* Submit button */
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Message alerts */
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .add-admin-card {
+        max-width: 100%;
+        padding: 20px;
+    }
+}

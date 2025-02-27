@@ -1,0 +1,12 @@
+.game-search-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) !important;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,74 @@
+.upload-game-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.upload-game-form input,
+.upload-game-form textarea,
+.upload-game-form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.upload-game-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.upload-game-form label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.upload-game-form button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.upload-game-form button:hover {
+    background-color: #218838;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 16px; /* Adjust width */
+    height: 16px; /* Adjust height */
+}
+
+.tag-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tag {
+    background-color: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.tag:hover {
+    background-color: #2980b9;
+}

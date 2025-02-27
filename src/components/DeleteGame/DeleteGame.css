@@ -1,0 +1,45 @@
+.delete-game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-results-container {
+    width: 100%;
+    max-width: 500px;
+    /* Keep it within a fixed width */
+    max-height: 500px;
+    /* Set a fixed height */
+    overflow-y: scroll;
+    /* Enable vertical scrolling */
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc;
+    /* Optional: Just for visual clarity */
+
+    .game-search-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .game-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        /* Force 2 columns */
+        gap: 10px !important;
+        width: 100%;
+        /* overflow: hidden; */
+    }
+
+}

@@ -1,0 +1,62 @@
+.report-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.95);
+    /* Semi-transparent white */
+    color: #1c1c1c;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 10px;
+    /* Optional: Add rounded corners */
+}
+
+
+.report-form h2 {
+    margin-bottom: 15px;
+    /* Space below the title */
+}
+
+.report-form input[type="email"] {
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    margin-bottom: 10px;
+    /* Space below the input */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+.report-form textarea {
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    margin-bottom: 10px;
+    /* Space below the textarea */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+.form-buttons {
+    display: flex;
+    /* Flex container for buttons */
+    justify-content: space-between;
+    /* Space between buttons */
+}
+
+.form-buttons button {
+    flex: 1;
+    /* Make buttons equal width */
+    margin: 0 5px;
+    /* Space between buttons */
+    padding: 10px;
+    /* Padding for buttons */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}

@@ -1,0 +1,115 @@
+.game-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    color: white;
+    align-self: center;
+}
+
+.game-container {
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+.game-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Button Styles */
+.button-container {
+    display: flex;
+    /* Arrange buttons in a row */
+    justify-content: center;
+    /* Center the buttons */
+    margin: 20px 0;
+    /* Space above and below buttons */
+}
+
+.fullscreen-btn,
+.like-btn,
+.dislike-btn,
+.report-btn {
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+    /* Space between buttons */
+}
+
+.fullscreen-btn {
+    background-color: #007bff;
+    /* Blue */
+    color: white;
+    margin-left: auto;
+}
+
+.fullscreen-btn:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.like-btn {
+    background-color: #28a745;
+    /* Green */
+    color: white;
+}
+
+.like-btn:hover {
+    background-color: #218838;
+    /* Darker green on hover */
+}
+
+.dislike-btn {
+    background-color: #dc3545;
+    /* Red */
+    color: white;
+}
+
+.dislike-btn:hover {
+    background-color: #c82333;
+    /* Darker red on hover */
+}
+
+.report-btn {
+    background-color: #6f42c1;
+    /* Purple */
+    color: white;
+}
+
+.report-btn:hover {
+    background-color: #5a32a3;
+    /* Darker purple on hover */
+}
+
+/* Additional Text Styling */
+.game-description,
+.game-category {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.game-category {
+    margin-bottom: 20px;
+}
+
+.game-description strong,
+.game-category strong {
+    color: #ffc107;
+    /* Yellow */
+}
+
+.button-container button[disabled] {
+    cursor: not-allowed;
+}
+
+.blur {
+    filter: blur(5px);
+    /* Adjust the blur intensity as needed */
+    transition: filter 0.3s ease;
+    /* Smooth transition */
+}
