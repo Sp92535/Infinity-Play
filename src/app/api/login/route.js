@@ -46,7 +46,6 @@ export const POST = async (req) => {
 
 
     } catch (error) {
-        console.log();
 
         return NextResponse.json({
             success: false,

@@ -47,7 +47,6 @@ const Game = () => {
                 setError("Failed to vote. Try again later.");
             }
         } catch (error) {
-            console.error("Error while voting:", error);
             setError("Error while voting. Please try again.");
         }
     };
@@ -98,7 +97,6 @@ const Game = () => {
                     setError("Failed to fetch game data.");
                 }
             } catch (error) {
-                console.error("Error fetching game data:", error);
                 setError("Unable to fetch game data. Please try again later.");
             } finally {
                 setLoading(false);

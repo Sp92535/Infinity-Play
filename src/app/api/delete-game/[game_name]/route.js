@@ -50,7 +50,6 @@ export const DELETE = async (req, { params }) => {
         }, { status: 200 });
 
     } catch (error) {
-        console.log(error);
 
         return NextResponse.json({
             success: false,

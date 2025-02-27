@@ -20,7 +20,7 @@ const ReportForm = ({ gameName, setIsReportFormVisible, setIsReported }) => {
             localStorage.setItem(`reported_${gameName}`, 'true');
 
         } catch (error) {
-            console.log("ERROR REPORTING")
+            alert("ERROR REPORTING")
         }
 
     };
